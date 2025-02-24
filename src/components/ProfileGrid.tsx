@@ -1,7 +1,10 @@
-import { Box, GridItem, HStack, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, GridItem, HStack, Icon, IconButton, SimpleGrid, Text , Image } from '@chakra-ui/react';
 import NavBar from './NavBar';
 import { useEffect } from 'react';
 import PortfolioImage from './PortfolioImage';
+import github from '../assets/github.svg'
+import linkedin from '../assets/linkedin.svg'
+import mail from '../assets/mail.svg'
 
 const ProfileGrid = () => {
   // useEffect(() => {
@@ -20,7 +23,7 @@ const ProfileGrid = () => {
         h="70vh" 
         bg="#D7D7D7" 
         color="white" 
-        // display="flex" 
+        display="flex" 
         // alignItems="center" 
         // justifyContent="center" 
         borderRadius="md" 
@@ -29,6 +32,18 @@ const ProfileGrid = () => {
         top={10}
         left={0}
       >
+        <Box marginX={40} marginY={150}>
+        <Text  fontFamily='Raleway' color='black' fontWeight='bold' fontSize='2xl' marginY='8'>Hi, I am</Text>
+        <Text fontFamily='Raleway' color='black' fontWeight='extrabold' fontSize='5xl' marginY={-3}>Prashant Sharma</Text>
+        <Text fontFamily='Raleway' color='#909090' fontWeight='semibold' fontSize='2xl' >Full Stack Software Engineer</Text>
+        <HStack marginY={10} spacing={5}>
+        <Image src={mail} boxSize={8} boxShadow={4} borderRadius="md" border="2px solid black" padding={1}/>
+        <Image src={github} boxSize={8} boxShadow={4} borderRadius="md" border="2px solid black" padding={1}/>
+        <Image src={linkedin} boxSize={8} boxShadow={4} borderRadius="md" border="2px solid black" padding={1}/>
+        </HStack>
+        </Box>
+       
+        
       </Box>
       <Box 
         w="94vw" 
