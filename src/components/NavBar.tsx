@@ -4,8 +4,8 @@ const NavBar = () => {
     const navTexts = ['About me', 'Skills', 'Home'];
 
     return (
-        <Box marginY='18vh' marginX='10vh'>
-            <HStack spacing={5} transform='rotate(-9.78deg)' >
+        <Box >
+            <HStack spacing={5}  >
                 {navTexts.map(text => <Text fontFamily="Montserrat" fontWeight="bold" fontSize="md" whiteSpace='nowrap' >{text}</Text>)}
                 <Button bg='white' color='black' fontWeight="bold" fontSize="md">CONTACT ME</Button>
             </HStack>

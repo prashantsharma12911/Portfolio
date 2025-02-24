@@ -1,6 +1,7 @@
 import { Box, GridItem, HStack, SimpleGrid, Text } from '@chakra-ui/react';
 import NavBar from './NavBar';
 import { useEffect } from 'react';
+import PortfolioImage from './PortfolioImage';
 
 const ProfileGrid = () => {
   // useEffect(() => {
@@ -12,6 +13,8 @@ const ProfileGrid = () => {
 
   return (
     <Box overflow='hidden' borderRadius="0">
+         {/* <Box  borderRadius="0"> */}
+
       <Box 
         w="100vw" 
         h="70vh" 
@@ -31,7 +34,7 @@ const ProfileGrid = () => {
         w="94vw" 
         h="105vh" 
         bg="black" 
-        display="flex" 
+        // display="flex" 
         // alignItems="center" 
         // justifyContent="flex-start" 
         borderRadius="md" 
@@ -39,12 +42,15 @@ const ProfileGrid = () => {
         boxShadow="md"
         position="relative"
         top={'-75vh'}
-        left={"40vw"}
+        left={"45vw"}
         transform="rotate(9.78deg)"
         overflow='hidden'
         // border='2px solid red'
       >
+        <Box top={10} position='relative' transform='rotate(-9.78deg)' left={10}>
         <NavBar/>
+        <PortfolioImage/>
+        </Box>
       </Box>
       <Box width='100vw' height='30vh' bg='gray.600' zIndex={10} position='relative' top='-104.9vh'/>
     </Box>

@@ -14,6 +14,16 @@ const App = () => {
 
       {/* <Text height={100}>IMPLEMENTATION IN PROGRESS</Text> */}
       <ProfileGrid/>
+
+      {/* <Box width='100vw' height='20vh' display='flex'>
+        <Box width='100vw' height='10vh' bg='blue'>
+
+        </Box>
+        <Box width='100vw' height='10vh' bg='red'>
+
+        </Box>
+      </Box> */}
+
     </Box>
     // <Box bg='black' width='100vw' height='39.07vh'>
 
