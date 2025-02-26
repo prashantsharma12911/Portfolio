@@ -1,15 +1,14 @@
 import { Box, Button, Flex, Grid, GridItem, HStack, Show, SimpleGrid, Text } from '@chakra-ui/react'
 import NavBar from './components/NavBar'
 import ProfileGrid from './components/ProfileGrid'
+import ProfileSmallDevice from './components/ProfileSmallDevice'
 
 const App = () => {
   return (
 
     <Box>
       <Show below="md">
-        <Box height={100} bg='yellow'>
-          <Text>Hello small device</Text>
-        </Box>
+          <ProfileSmallDevice/>
       </Show>
 
       <Show above="md" >
