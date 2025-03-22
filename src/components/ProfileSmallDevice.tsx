@@ -8,7 +8,7 @@ import ProfileHeaderSm from './ProfileHeaderSm'
 
 const ProfileSmallDevice = () => {
     return (
-        <Box position='relative' h='100vh' w='100vw'  >
+        <Box position='relative' h='100vh' w='100vw' overflow='clip'>
             <Box>
                 <Image w='100vw' h='100vh' src={sharma} marginY={4}></Image>
             </Box>

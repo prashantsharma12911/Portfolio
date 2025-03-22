@@ -42,6 +42,7 @@ const Skills = () => {
                     columns={{ sm: 3, md: 4, lg: 5, xl: 5 }}
                     spacing={10}
                     marginY={5}
+                    justifyContent='center'
                 >
                     {skills.map(s => <Icon as={s}  boxSize = {20}  _hover={{ color: "gray.500", transform: "scale(1.1)" }} ></Icon>)}
                 </SimpleGrid>
@@ -50,6 +51,7 @@ const Skills = () => {
                     columns={{ sm: 3, md: 4, lg: 5, xl: 5 }}
                     spacing={10}
                     marginY={5}
+                    justifyContent='center'
                 >
                     {learning.map(s => <Icon as={s}  boxSize = {20}  _hover={{ color: "gray.500", transform: "scale(1.1)" }} ></Icon>)}
                 </SimpleGrid>

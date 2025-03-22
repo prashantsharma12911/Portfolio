@@ -7,7 +7,7 @@ import PortfolioHeading from './PortfolioHeading';
 
 const ProfileGrid = () => {
   return (
-    <Box w='100vw' h='70vh' overflow='hidden' position='absolute'>
+    <Box w='100vw' h='70vh' overflow='clip' position='absolute'>
         <Box
           w="50vw"
           h="520px"

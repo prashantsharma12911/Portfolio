@@ -5,7 +5,7 @@ import ProfileSmallDevice from './components/ProfileSmallDevice'
 import About from './components/About'
 import Skills from './components/Skills'
 import DesignDevMain from './components/DesignDevMain'
-import Contack from './components/Contact'
+import Contact from './components/Contact'
 
 const App = () => {
 
@@ -43,7 +43,7 @@ const App = () => {
         <ProfileGrid />
         <Box h='70vh'></Box>
         {/* height calculations are from top so we need to fix it */}
-
+        </Show>
         <Box bg='blackAlpha.500' padding={5}>
           <About description={about} limit={400} />
         </Box>
@@ -57,9 +57,11 @@ const App = () => {
 
         <DesignDevMain/>
         <Skills/>
-        <Contack/>
+        <Contact/>
 
-      </Show>
+        <Box h={40}></Box>
+
+      
 
 
 
