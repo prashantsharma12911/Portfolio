@@ -1,4 +1,4 @@
-import { Box, Image, Text, HStack } from '@chakra-ui/react'
+import { Box, Image, Text, HStack, Icon } from '@chakra-ui/react'
 import React from 'react'
 import sharma from '../assets/sharma.jpeg'
 import github from '../assets/github.svg'
@@ -10,7 +10,7 @@ const ProfileSmallDevice = () => {
     return (
         <Box position='relative' h='100vh' w='100vw' overflow='clip'>
             <Box>
-                <Image w='100vw' h='100vh' src={sharma} marginY={4}></Image>
+                <Image w='100vw' h='100vh' src={sharma} ></Image>
             </Box>
             <Box w='120vw' h='40vh' bg='gray.900' position='relative' transform='rotate(-15deg)' top='-35vh' opacity={0.7}>
             </Box>

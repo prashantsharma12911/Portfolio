@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, HStack, Show, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem, HStack, Icon, Show, SimpleGrid, Text } from '@chakra-ui/react'
 import NavBar from './components/NavBar'
 import ProfileGrid from './components/ProfileGrid'
 import ProfileSmallDevice from './components/ProfileSmallDevice'
@@ -6,6 +6,8 @@ import About from './components/About'
 import Skills from './components/Skills'
 import DesignDevMain from './components/DesignDevMain'
 import Contact from './components/Contact'
+import { FaAngleDoubleDown } from "react-icons/fa";
+import { useState } from 'react'
 
 const App = () => {
 
@@ -30,10 +32,16 @@ const App = () => {
     "for ways to push the boundaries of software development. Let’s connect and build " +
     "cutting-edge solutions together! ";
 
+  const [expanded, setExpanded] = useState(false);
+
   return (
 
     <Box>
-      <Show below="md">
+      <Show below="md" >
+        <Box w='100vw' display='flex' justifyContent='right' bg='black'>
+          <Icon as={FaAngleDoubleDown} boxSize={10} marginRight={2} onClick={() => setExpanded(true)}></Icon>
+        </Box>
+
         <ProfileSmallDevice />
       </Show>
 
@@ -41,27 +49,27 @@ const App = () => {
         {/* <Box w='100vw' h='100vh' position='absolute' overflowX='hidden'> */}
 
         <ProfileGrid />
-        <Box h='70vh'></Box>
+        <Box h='70vh' ></Box>
         {/* height calculations are from top so we need to fix it */}
-        </Show>
-        <Box bg='blackAlpha.500' padding={5}>
-          <About description={about} limit={400} />
-        </Box>
+      </Show>
+      <Box bg='blackAlpha.500' padding={5}>
+        <About description={about} limit={400} />
+      </Box>
 
-        <Box width='100vw' display="flex" justifyContent="center" marginY={10} >
-          <Text borderLeft="4px solid black"
-            borderRight="4px solid black"
-            bg="white"
-            color='black' fontWeight='bold' marginX={3} marginY={3} paddingX={4} >Explore</Text>
-        </Box>
+      <Box width='100vw' display="flex" justifyContent="center" marginY={10} >
+        <Text borderLeft="4px solid black"
+          borderRight="4px solid black"
+          bg="white"
+          color='black' fontWeight='bold' marginX={3} marginY={3} paddingX={4} >Explore</Text>
+      </Box>
 
-        <DesignDevMain/>
-        <Skills/>
-        <Contact/>
+      <DesignDevMain />
+      <Skills />
+      <Contact />
 
-        <Box h={40}></Box>
+      <Box h={40}></Box>
 
-      
+
 
 
 
