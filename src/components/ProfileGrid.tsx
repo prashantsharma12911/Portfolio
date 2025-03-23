@@ -35,7 +35,7 @@ const ProfileGrid = () => {
           overflow='hidden'
         >
           <Box top={40} position='absolute' transform='rotate(-9.78deg)' left={20}>
-            <NavBar />
+            <NavBar displayVertical = {false}/>
             <PortfolioImage />
           </Box>
         </Box>
