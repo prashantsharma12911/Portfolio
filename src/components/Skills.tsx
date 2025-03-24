@@ -27,7 +27,7 @@ const Skills = () => {
     const skills : IconType[] = [SiSpring,SiSpringboot , FaJava , SiMysql , FaAws , TbBrandJavascript , TiHtml5 , IoLogoCss3 , FaGithub , FaFigma ,FaLaptopCode , FaReact ];
     const learning : IconType[] = [FaAndroid , DiMongodb , RiFlutterFill ]
     return (
-        <Box>
+        <Box id='skills'>
             <Box display='flex' justifyContent='center' paddingY={10}>
                 <Text border="4px solid black" fontWeight='bold' fontSize='4xl' paddingX={8} _hover={{
                     bg: "black",  // Changes background color on hover

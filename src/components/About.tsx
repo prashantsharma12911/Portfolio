@@ -12,7 +12,7 @@ const About = ({description , limit} : Props) => {
     const [expanded, setExpanded] = useState(false);
 
   return (
-        <Text onClick={() => setExpanded(!expanded)}>
+        <Text id='aboutMe' onClick={() => setExpanded(!expanded)}>
       {expanded ? description : desc + " ..."}{" "}
       {
         <Button size="xs" fontWeight="bold"  marginLeft={1}>

@@ -29,7 +29,7 @@ const Contack = () => {
   };
 
   return (
-    <Box display="flex" w="100vw" justifyContent="center" flexDirection="column" alignItems="center">
+    <Box id="contactMe" display="flex" w="100vw" justifyContent="center" flexDirection="column" alignItems="center">
       <Text fontFamily="sans-serif" fontSize="4xl" fontWeight="bold" border="4px solid black" paddingX={5}>
         C O N T A C T
       </Text>
