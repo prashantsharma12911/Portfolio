@@ -79,7 +79,7 @@ const NavBar = ({ displayVertical, expanded }: Props) => {
         </Box>
       );
     } else {
-      return;
+      return null;
     }
   }
   return (
