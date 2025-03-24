@@ -41,7 +41,7 @@ const NavBar = ({ displayVertical, expanded }: Props) => {
     if (expanded) {
       return (
         <Box>
-          <VStack>
+          <VStack bg='gray.800'>
             {navTexts.map((navInfo, index) =>
               navInfo.redirectPage == null ? (
                 <Text

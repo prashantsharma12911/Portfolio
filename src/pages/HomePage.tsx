@@ -40,7 +40,7 @@ const HomePage = () => {
       <Show below="md" >
         <NavBar displayVertical = {true} setExpanded={() => setExpanded(!expanded)} expanded = {expanded}></NavBar>
         <Box w='100vw' display='flex' justifyContent='right' bg='black'>
-          <Icon as={FaAngleDoubleDown} boxSize={10} marginRight={2} onClick={() => setExpanded(!expanded)}></Icon>
+          <Icon as={FaAngleDoubleDown} color='white' boxSize={10} marginRight={2} onClick={() => setExpanded(!expanded)}></Icon>
         </Box>
 
         <ProfileSmallDevice />
